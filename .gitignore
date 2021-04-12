@@ -1,0 +1,10 @@
+*.csv
+.DS_Store
+A00_RelatedFiles/
+A000_RelatedFiles/
+*.txt
+*.tiff
+*.jpg
+CasADi/
+*.mat
+*.zip

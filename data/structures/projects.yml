@@ -1,0 +1,20 @@
+AGRO_SOFC:
+    supervisor: Ainoha Vicario
+    description: Modelling and control of a greenhouse based on SOFC cell and reformer. 
+    WPs: 
+      - 
+        acrm: REFORMER
+        name: Reformer - modelling and control
+      - 
+        acrm: SOFC
+        name: SOFC cell - modelling and control
+      - 
+        acrm: ENERGY
+        name: Energy optimization
+      -
+        acrm: PROD
+        name: Optimization of production 
+###########################################################################################
+Horti_MED:
+    supervisor: Cristina Martín
+    description: Modelling and control of a greenhouse based on SOFC cell and reformer. 

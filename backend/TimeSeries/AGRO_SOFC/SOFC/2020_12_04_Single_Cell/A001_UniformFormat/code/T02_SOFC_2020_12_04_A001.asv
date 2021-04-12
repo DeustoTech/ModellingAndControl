@@ -1,0 +1,93 @@
+clear
+
+load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset01.mat')
+%% 0 Uniform Time Stamp
+
+dataset02 = UniformTimeStamp(dataset01{1},'DT',minutes(2));
+
+%% Media Movil
+figure(1)
+clf
+%
+ind = randsample(100,10,1);
+nmax = 5;
+for i = 1:nmax
+
+    subplot(nmax,2,2*(i-1)+1)
+    plot(dataset01{ind(i)}.Time,dataset01{ind(i)}.T_A_01,'.')
+    title('Real')
+    
+    y1 = min(dataset01{ind(i)}.T_A_01);
+    y2 = max(dataset01{ind(i)}.T_A_01);
+    ylim([y1 y2])
+    %
+    subplot(nmax,2,2*(i-1)+2)
+    plot(dataset02{ind(i)}.Time,dataset02{ind(i)}.T_A_01,'.')
+    title('Media móvil')
+    ylim([y1 y2])
+
+end
+
+%%
+[dataset03,Mean,STD] = NormalizedTableCell(dataset02);
+
+
+%
+
+%% 1 - Full data
+fulldata = cat(1,dataset03{:});
+
+ind = find(isnan(fulldata{:,end}));
+
+fulldata(ind,:) = [];
+
+
+%% 2 - Vemos todas las correlaciones 
+fig = figure(1);
+fig.Units = 'norm';
+fig.Position = [0 0 0.65 0.65];
+fig.Renderer = 'Painters';
+alpha = 0.98;
+names = {'$u_{T1}$','$u_{T2}$', ...
+         '$x_{T_a^{1}}$','$x_{T_a^{2}}$','$x_{T_a^{3}}$', ...
+         '$x_{T_a^{4}}$','$x_{T_a^{5}}$','$x_{T_a^{6}}$', ...
+         '$x_{T_c^{1}}$','$x_{T_c^{2}}$','$x_{T_c^{3}}$', ...
+         '$x_{T_c^{4}}$','$x_{T_c^{5}}$','$x_{T_c^{6}}$', ...
+         '$x_{T_a^{in}}$','$x_{T_a^{out}}$','$x_{T_c^{in}}$','$x_{T_c^{out}}$', ...
+         '$x_{I}$','$x_{V}$', ...
+         '$u_{H2}$','$u_{Air}$', ...
+         '$x_{H2}$','$x_{CO}$','$x_{CO2}$','$x_{CH4}$','$x_{O2}$'};
+LinearCoorAna(fulldata(:,2:end),'alpha',alpha,'names',names);
+xlim([0 9.75])
+%title("Variables Linear Coorelation with $\alpha$="+alpha,'Interpreter','latex','FontSize',20)
+%
+path = "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/AGRO-SOFC/T03-SOFC/docs/2021-02-01-SOFC-DataDriven-Model/img/";
+print(fig,fullfile(path,'corr.eps'),'-depsc')
+%% 3 - Elegimos las entradas y salidas
+
+ControlVars  = {'T_Oven_01','H2_act','Air_act'};
+
+
+StateVars = {  'T_C_In' ,'T_C_Out',               ...
+                'i_act2','V_act'  ,               ...
+                'v_H2_act','v_CO_act','v_CO2_act','v_CH4_act','v_O2_act'};
+%%
+nv.MEAN_control = Mean([1 21 22]);
+nv.STD_control  = STD([1 21 22]); 
+%
+nv.MEAN_state = Mean([17:20  23:27]);
+nv.STD_state  = STD([17:20  23:27]);
+
+%% 4 - Vemos si hay correlaciones solo en las variables de control
+figure(2)
+alpha = 0.95;
+LinearControlStateCoor(fulldata,ControlVars,StateVars,alpha)
+
+%% 6 - Construimos los experimentos 
+idd1 = Build_Iddata(dataset03,ControlVars,StateVars);
+
+save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset02.mat','idd1','nv')
+
+%%
+
+
