@@ -24,7 +24,7 @@ function ShowData(iTableSeries,varargin)
     for ivar = 1:nvars
        subplot(sq_vars2,sq_vars,ivar)
        plot(iTableSeries.DateTime,ds.(vars{ivar}),'.') 
-       title(vars{ivar},'Interpreter','latex')
+       title(vars{ivar},'Interpreter','none')
     end
 
 end

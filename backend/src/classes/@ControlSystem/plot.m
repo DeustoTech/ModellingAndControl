@@ -8,7 +8,7 @@ hold on
 for ivar = ics.InputVars
     plot(date,ds.(ivar{:}))
 end
-legend(ics.InputVars)
+legend(ics.InputVars,'Interpreter','none')
 title('Inputs')
 %
 subplot(3,1,2)
@@ -16,7 +16,7 @@ hold on
 for ivar = ics.DisturbanceVars
     plot(date,ds.(ivar{:}))
 end
-legend(ics.DisturbanceVars)
+legend(ics.DisturbanceVars,'Interpreter','none')
 title('Disturbances')
 %
 subplot(3,1,3)
@@ -24,5 +24,5 @@ hold on
 for ivar = ics.OutputVars
     plot(date,ds.(ivar{:}))
 end
-legend(ics.OutputVars)
+legend(ics.OutputVars,'Interpreter','none')
 title('Outputs')

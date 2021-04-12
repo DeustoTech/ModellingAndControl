@@ -1,8 +1,10 @@
 function iTs = RemoveRowsNan(iTs)
 
-ind = isnan(sum(iTs.DataSet{:,:},2));
-iTs.DataSet(ind,:)= [];
-iTs.DateTime(ind)= [];
+for i = 1:length(iTs)
+    ind = isnan(sum(iTs(i).DataSet{:,:},2));
+    iTs(i).DataSet(ind,:) = [];
+    iTs(i).DateTime(ind)  = [];
+end
 
 end
 

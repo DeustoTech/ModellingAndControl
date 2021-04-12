@@ -22,6 +22,8 @@ classdef TableSeries
             data.DateTime = [];
             obj.DataSet =  data;
             %
+            obj = Sort(obj);
+            %
             obj = RemoveRepeatMs(obj);
         end
         function r = get.tspan(obj)
