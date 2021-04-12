@@ -62,16 +62,38 @@ classdef ControlSystem
         function r = get.Ndata(obj)
             r = size(obj.TableSeries.DataSet,1);
         end
-        %
+
+        %%%%%%%%%%%%%%%%%%%%
         function r = get.Inputs(obj)
-            r = obj.TableSeries.DataSet(:,obj.InputVars);
+            i = 0;
+            r = cell(1,length(obj.TableSeries));
+            for iTs = obj.TableSeries
+                ids = iTs.DataSet;
+                i = i + 1;
+                r{i} = ids{:,obj.InputVars}';
+            end
         end
+        %%%%%%%%%%%%%%%%%%%%
         function r = get.Outputs(obj)
-            r = obj.TableSeries.DataSet(:,obj.OutputVars);
+            i = 0;
+            r = cell(1,length(obj.TableSeries));
+            for iTs = obj.TableSeries
+                ids = iTs.DataSet;
+                i = i + 1;
+                r{i} = ids{:,obj.OutputVars}';
+            end
         end
+        %%%%%%%%%%%%%%%%%%%%
         function r = get.Disturbances(obj)
-            r = obj.TableSeries.DataSet(:,obj.DisturbanceVars);
+            i = 0;
+            r = cell(1,length(obj.TableSeries));
+            for iTs = obj.TableSeries
+                ids = iTs.DataSet;
+                i = i + 1;
+                r{i} = ids{:,obj.DisturbanceVars}';
+            end
         end
+        %%%%%%%%%%%%%%%%%%%%
     end
 end
 

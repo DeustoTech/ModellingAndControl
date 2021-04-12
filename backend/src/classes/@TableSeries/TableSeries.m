@@ -1,11 +1,10 @@
+
 classdef TableSeries
     %TABLESERIES object to save time series
     
     properties
         DateTime
         DataSet
-        mean
-        std
     end
     
     properties (Dependent = true)

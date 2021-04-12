@@ -4,4 +4,4 @@ load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/M
 %%
 dataset = [dataset{:}];
 %%
-ShowData(dataset(5));
+dataset.

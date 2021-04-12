@@ -1,16 +1,34 @@
-function  [Inputs,Outputs,Dist] = NormalizeData(ics)
+function  [ics] = NormalizeData(ics)
 
 
-Inputs = ics.Inputs{:,:};
-Outputs = ics.Outputs{:,:};
-Dist = ics.Disturbances{:,:};
-
+mu_vars  = MeanVars(ics);
+std_vars = STDVars(ics);
 %
-if ~isempty(ics.Normalization)
-   Inputs = (Inputs - ics.Normalization.mean.in)./ics.Normalization.std.in;
-   Outputs = (Outputs - ics.Normalization.mean.out)./ics.Normalization.std.out;
-   Dist = (Dist - ics.Normalization.mean.dist)./ics.Normalization.std.dist;
+
+nTs = length(ics.TableSeries);
+
+for iTs = 1:nTs
+    %
+    %
+    i = 0;
+    for ivar = ics.InputVars
+        i = i + 1;
+        ics.TableSeries(iTs).DataSet.(ivar{:}) = (ics.TableSeries(iTs).DataSet.(ivar{:}) - mu_vars.in(i))/ std_vars.in(i);
+    end
+    %
+    i = 0;
+    for ivar = ics.OutputVars
+        i = i + 1;
+        ics.TableSeries(iTs).DataSet.(ivar{:}) = (ics.TableSeries(iTs).DataSet.(ivar{:}) - mu_vars.out(i))/ std_vars.out(i);
+    end
+    %
+    i = 0;
+    for ivar = ics.DisturbanceVars
+        i = i + 1;
+        ics.TableSeries(iTs).DataSet.(ivar{:}) = (ics.TableSeries(iTs).DataSet.(ivar{:}) - mu_vars.dist(i))/ std_vars.dist(i);
+    end
 end
+ics.Normalization = NormalizationCS(mu_vars,std_vars);
 
 end
 

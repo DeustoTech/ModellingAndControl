@@ -1,7 +1,7 @@
-function plot(ics)
+function plot(ics,ind)
 
-ds = ics.TableSeries.DataSet;
-date = ics.TableSeries.DateTime;
+ds = vertcat(ics.TableSeries(ind).DataSet);
+date = horzcat(ics.TableSeries(ind).DateTime);
 %
 subplot(3,1,1)
 hold on

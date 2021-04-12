@@ -34,6 +34,7 @@ function [MatCoor,MatCoor_boolean,iplot,G] = LinearCoor(Ts,varargin)
         iplot.NodeFontSize = FontSize;
         iplot.MarkerSize = 9;
         iplot.EdgeColor = iplot.EdgeColor*0.5 + 0.5*[1 1 1];
+        iplot.Interpreter = 'none';
     end
 end
 
