@@ -22,6 +22,10 @@ classdef ControlSystem
        Inputs
        Outputs
        Disturbances
+       %
+       tspan
+       %
+       Vars
     end
     
     methods
@@ -50,6 +54,7 @@ classdef ControlSystem
                 error('Some problem in DisturbanceVars ')
             end
         end
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function r = get.Ndis(obj)
             r = length(obj.DisturbanceVars);
         end
@@ -63,7 +68,7 @@ classdef ControlSystem
             r = size(obj.TableSeries.DataSet,1);
         end
 
-        %%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function r = get.Inputs(obj)
             i = 0;
             r = cell(1,length(obj.TableSeries));
@@ -73,7 +78,7 @@ classdef ControlSystem
                 r{i} = ids{:,obj.InputVars}';
             end
         end
-        %%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function r = get.Outputs(obj)
             i = 0;
             r = cell(1,length(obj.TableSeries));
@@ -83,7 +88,7 @@ classdef ControlSystem
                 r{i} = ids{:,obj.OutputVars}';
             end
         end
-        %%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function r = get.Disturbances(obj)
             i = 0;
             r = cell(1,length(obj.TableSeries));
@@ -93,7 +98,20 @@ classdef ControlSystem
                 r{i} = ids{:,obj.DisturbanceVars}';
             end
         end
-        %%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        function r = get.tspan(obj)
+            i = 0;
+            r = cell(1,length(obj.TableSeries));
+            for iTs = obj.TableSeries
+                ids = iTs.DateTime;
+                i = i + 1;
+                r{i} = ids;
+            end
+        end
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        function r = get.Vars(ics)
+            r = [ics.InputVars(:)' ics.DisturbanceVars(:)' ics.OutputVars(:)'];
+        end
     end
 end
 

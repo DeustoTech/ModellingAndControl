@@ -26,7 +26,7 @@ print(fig,'/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/Git
 % Diferencia de dias entre los datos 
 plot(days(diff(dataset02.FechaDeEntrega)))
 %
-Delta_day = 50;
+Delta_day = 100;
 %%
 % Consideramos que existen 3 paradas 
 plot(days(diff(dataset02.FechaDeEntrega))>Delta_day)
@@ -43,7 +43,7 @@ ndays = length(ind_days);
 for i = 1:ndays-1
     dataset03{i} = dataset02((ind_days(i)+1):(ind_days(i+1)-1),:);
 end
-dataset03{i+1} = dataset02((ind_days(i)+1):end,:);
+dataset03{i+1} = dataset02((ind_days(i+1)+1):end,:);
 
 %%
 
@@ -63,10 +63,9 @@ plotdat(dataset03{i},ui{i})
 end
 
 print(fig,'/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/pics/pic02.png','-dpng')
-
-
 %%
-
+pathfile = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output'
+save(fullfile(pathfile,'dataset03.mat'),'dataset03');
 %%
 function plotdat(ds,Parent)
     subplot(2,1,1,'Parent',Parent)
