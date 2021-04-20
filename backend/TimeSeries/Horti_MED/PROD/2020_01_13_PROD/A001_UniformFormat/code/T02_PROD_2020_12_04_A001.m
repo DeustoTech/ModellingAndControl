@@ -3,9 +3,10 @@ clear
 load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset01.mat')
 %% Ordenamos los datos por dias 
 [~,ind] = sort(dataset01.FechaDeEntrega);
-
+%
+dataset01.Properties.VariableNames{1} = 'DateTime';
 dataset02 = dataset01(ind,:);
-
+dataset02(:,2:end-1) = [];
 %% Vista de datos generales
 
 fig = figure(1);
@@ -13,8 +14,8 @@ fig.Units = 'norm';
 fig.Position = [0 0 0.6 0.5];
 
 
-idays = days(dataset02.FechaDeEntrega - dataset02.FechaDeEntrega(1));
-plot(dataset02.FechaDeEntrega,dataset02.Netokg,'*-')
+idays = days(dataset02.DateTime - dataset02.DateTime(1));
+plot(dataset02.DateTime,dataset02.Netokg,'*-')
 ylabel('NetoKg')
 xlabel('Date')
 grid on 
@@ -24,17 +25,17 @@ print(fig,'/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/Git
 %% Separacion por recogidas 
 %
 % Diferencia de dias entre los datos 
-plot(days(diff(dataset02.FechaDeEntrega)))
+plot(days(diff(dataset02.DateTime)))
 %
-Delta_day = 100;
+Delta_day = 15;
 %%
 % Consideramos que existen 3 paradas 
-plot(days(diff(dataset02.FechaDeEntrega))>Delta_day)
+plot(days(diff(dataset02.DateTime))>Delta_day)
 %
-ind_days_bolean = (days(diff(dataset02.FechaDeEntrega)) > Delta_day);
+ind_days_bolean = (days(diff(dataset02.DateTime)) > Delta_day);
 % consideramos el primer dia como inicio de un campaña de recogida
 ind_days_bolean(1) = 1;
-dataset02.FechaDeEntrega(ind_days_bolean)
+dataset02.DateTime(ind_days_bolean)
 %
 dataset03 = {};
 ind_days =find(ind_days_bolean);
@@ -69,11 +70,11 @@ save(fullfile(pathfile,'dataset03.mat'),'dataset03');
 %%
 function plotdat(ds,Parent)
     subplot(2,1,1,'Parent',Parent)
-    plot(ds.FechaDeEntrega,ds.Netokg,'-','Marker','.')
+    plot(ds.DateTime,ds.Netokg,'-','Marker','.')
     title('Kg')
     grid on
     subplot(2,1,2,'Parent',Parent)
-    plot(ds.FechaDeEntrega,cumsum(ds.Netokg),'-','Marker','.')
+    plot(ds.DateTime,cumsum(ds.Netokg),'-','Marker','.')
     title('cum Kg ')
     grid on
 

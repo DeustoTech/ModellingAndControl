@@ -57,7 +57,7 @@ options.LearnRateSchedule = 'piecewise';
 %
 net = trainNetwork(reshape(XData',1,1,N,size(XData,1)),YData,lgraph,options);
 %%
-ind = 1;
+ind = 1:9;
 XTest = [[ics.Inputs{ind}]' [ics.Disturbances{ind}]'];
 ndat = size(XTest,1);
 YTest = predict(net,reshape(XTest',1,1,N,ndat));

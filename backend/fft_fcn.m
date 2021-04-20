@@ -1,4 +1,4 @@
-function fft_fcn(f,date,dt,thold)
+function fft_fcn(f,date,dt,thold,Parent)
 %%
 t = minutes(date-date(1));
 %
@@ -19,19 +19,16 @@ fhat = indices.*fhat;  % Zero out small Fourier coeffs. in Y
 ffilt = ifft(fhat); % Inverse FFT for filtered time signal
 
 %% PLOTS
-subplot(3,1,1)
-plot(date,f+fmean,'r','LineWidth',1.2), hold on
-plot(date,f+fmean,'k','LineWidth',1.5)
-legend('Noisy','Clean')
 %
-subplot(3,1,2)
-plot(date,f+fmean,'k','LineWidth',1.5), hold on
-plot(date,ffilt+fmean,'b','LineWidth',1.2)
+subplot(1,2,1,'Parent',Parent)
+plot(date,f+fmean,'k.','LineWidth',1.5), hold on
+plot(date,ffilt+fmean,'-b','LineWidth',1.2)
 legend('Clean','Filtered')
+ylim([0 50])
 %
-subplot(3,1,3)
+subplot(1,2,2,'Parent',Parent)
 plot(freq(L),PSD(L),'r','LineWidth',1.5), hold on
-plot(freq(L),PSDclean(L),'-b','LineWidth',1.2)
+plot(freq(L),PSDclean(L),'-.b','LineWidth',1.2)
 legend('Noisy','Filtered')
 
 
