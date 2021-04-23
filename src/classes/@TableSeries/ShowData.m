@@ -1,6 +1,6 @@
 function ShowData(iTableSeries,varargin)
 
-    ds = iTableSeries.DataSet;
+    ds = iTableSeries(1).DataSet;
     %%
     p = inputParser;
     addRequired(p,'iTableSeries')
@@ -20,12 +20,16 @@ function ShowData(iTableSeries,varargin)
         res      = nvars-sq_vars*sq_vars2;
     end
     
-    %
-    for ivar = 1:nvars
-       subplot(sq_vars2,sq_vars,ivar)
-       plot(iTableSeries.DateTime,ds.(vars{ivar}),'.-') 
-       title(vars{ivar},'Interpreter','none')
-    end
+    for iTs = iTableSeries
+        ds = iTs.DataSet;
+        for ivar = 1:nvars
+           subplot(sq_vars2,sq_vars,ivar)
+           hold on
 
+           plot(iTs.DateTime,ds.(vars{ivar}),'.-') 
+           title(vars{ivar},'Interpreter','none')
+        end
+    end
+    hold off
 end
 

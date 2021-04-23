@@ -15,7 +15,7 @@ Serie temporal de variables climáticas con una frecuencia de muestreo de aproxi
 Estos datos en bruto contienen muchas variables que son dependientes debido a que el sistema sysclima los computa. Es decir, existen variables como por ejemplo la temperatura de rocío (\texttt{Troco}) que son calculados a partir de una formula utilizada por el sistema. Removeremos este tipo de variables dado que estamos interesados en encontrar las correlaciones entre las medidas independientes. Por otra parte, tambien removeremos variables cuyo valor sea constante, dado que no aporta información relevante. Siguiendo estos pasos obtenemos la siguiente base de datos:
 
 \begin{dataset}[SysClima Compact]\label{dataset:sysclima2}
-    Serie Temporal con menos de variables que la base de datos \ref{dataset:sysclima}. Se puede ver 
+    Serie Temporal copia del Dataset \ref{dataset:sysclima} considernado un menor número de variables. En la Figura  \ref{fig:ViewDataSetSysClimaCompact} se puede ver una representación gráfica de sus variables, mientras que en la Tabla
 \end{dataset}
 
 Aunque esta es una base de datos con una buena resolución, esta contiene ventanas temporales sin datos de longitud aproximada de varias semanas. Aunque para el modelado de la temperatura interior, este nos es un problema; el modelado del crecimiento de la plantación depende fuertemente las condiciones climaticas en ventanas de tiempo del orden de meses. La falta de datos en la base de datos \ref{dataset:sysclima} nos imposibilita el uso de modelos mecanísticos para la predicción de la producción. Es por ello que hemos recogido los datos meteorológicos de la estación más cercana con registros históricos, que a continuación describiremos.
@@ -38,7 +38,7 @@ Por otro lado, como hemos mencionado anteriormente el único registro claro con 
               Textt         /   $^\circ C$      /  Exterior Temperature     ,
               HRExt         /   $W/m^2$         /  Humedad relativa Exterior,
               RadExd        /   $W/m^2$         /  Exterior Radiation       }
-
+ 
 
 
 \begin{table}
@@ -52,33 +52,33 @@ Por otro lado, como hemos mencionado anteriormente el único registro claro con 
         \texttt{Text}               & $^\circ C$     & Temperatura exterior         \\ \hline
         \texttt{HRExt}              & \%             & Humedad relativa Exterior    \\ \hline
         \texttt{RadExt}             & $W/m^2$        & Radiación Exterior           \\ \hline
-        \texttt{Vviento}            & $km/s$         & Wind Velocity         \\  \hline
+        \texttt{Vviento}            & $km/s$         & Wind Velocity                \\  \hline
         \texttt{DireccinViento}     & $^\circ$       & Dirección del Viento         \\ \hline
         \texttt{RadAcumExt}         & $W/m^2$        & Radiación Acumulada diaria Exterior \\ \hline
         \texttt{AlarmaLluvia}       & -              & Alarma de Viento             \\ \hline
         \texttt{AlarmaVto}          & -              & Alarma de Lluvia             \\ \hline
         \texttt{Tinv}               & $^\circ C$     & Temperatura interior         \\ \hline
-        \texttt{Troco}              & $^\circ C$     & Temperatura de Rocio\\  \hline
-        \texttt{RadInt}             & $W/m^2$        & Radiación Interior \\ \hline
-        \texttt{xDemPant1}          & $\%$           & Demanda de Pantalla de Sombreo\\ \hline
-        \texttt{xEstadoPant1}       & $\%$           & Estado de Pantalla de Sombreo\\ \hline
-        \texttt{TVentilacin}        & $^\circ C$     & Temperatura de Ventilación \\ \hline
-        \texttt{EstadoCenitalE}     & $\%$           &       \\ \hline
-        \texttt{EstadoCenitalO}     & $\%$           & \\ \hline
-        \texttt{EstadoLateralE}     & $\%$           & \\ \hline
-        \texttt{MaxHR}              & $\%$           & \\ \hline
-        \texttt{MinHR}              & $\%$           & \\ \hline
-        \texttt{DeltaX}             & $g/m^3$        & \\ \hline
-        \texttt{DeltaT}             & $^\circ C$     &  \\ \hline
-        \texttt{DPV}                & $mbar$         & Déficit de Presión de Vapor \\  \hline
-        \texttt{HRInt}              & $\%$           &  \\ \hline
-        \texttt{Ventiladores2Activo}& &  \\ \hline
-        \texttt{Aerotermo1Activo} & &\\ \hline
-        \texttt{Sonda1} & & \\ \hline
-        \texttt{Sonda2} & & \\ \hline
-        \texttt{Sonda3} & & \\ \hline
-        \texttt{Sonda5} & & \\ \hline
-        \texttt{Sonda6} & & \\
+        \texttt{Troco}              & $^\circ C$     & Temperatura de Rocio         \\  \hline
+        \texttt{RadInt}             & $W/m^2$        & Radiación Interior               \\ \hline
+        \texttt{xDemPant1}          & $\%$           & Demanda de Pantalla de Sombreo   \\ \hline
+        \texttt{xEstadoPant1}       & $\%$           & Estado de Pantalla de Sombreo    \\ \hline
+        \texttt{TVentilacin}        & $^\circ C$     & Temperatura de Ventilación       \\ \hline
+        \texttt{EstadoCenitalE}     & $\%$           & Porcentaje de apertura Cenital Este      \\ \hline
+        \texttt{EstadoCenitalO}     & $\%$           & Porcentaje de apertura Cenital Oeste     \\ \hline
+        \texttt{EstadoLateralE}     & $\%$           & Porcentaje de apertura Lateral Este      \\ \hline
+        \texttt{MaxHR}              & $\%$           & Maxima Humedad Relativa      \\ \hline
+        \texttt{MinHR}              & $\%$           & Mínima Humedad Relativa      \\ \hline
+        \texttt{DeltaX}             & $g/m^3$        &                              \\ \hline
+        \texttt{DeltaT}             & $^\circ C$     &                              \\ \hline
+        \texttt{DPV}                & $mbar$         & Déficit de Presión de Vapor  \\  \hline
+        \texttt{HRInt}              & $\%$           & Humedad relativa Interior    \\ \hline
+        \texttt{Ventiladores2Activo}&                &         -                    \\ \hline
+        \texttt{Aerotermo1Activo}   &                &         -                    \\ \hline
+        \texttt{Sonda1}             &                &         -                    \\ \hline
+        \texttt{Sonda2}             &                &         -                    \\ \hline
+        \texttt{Sonda3}             &                &         -                    \\ \hline
+        \texttt{Sonda5}             &                &         -                    \\ \hline
+        \texttt{Sonda6}             &                &         -                    \\
         \hline
     \end{tabular}
     \caption{Variables of dataset \ref{dataset:sysclima}}
@@ -91,19 +91,25 @@ Por otro lado, como hemos mencionado anteriormente el único registro claro con 
     \centering
     \begin{tabular}{|c|c|c|c|}
         \hline
-        \textbf{Name}           & \textbf{Units} & \textbf{Description}         \\ \hline
-        \texttt{Var2}           & -              & Sección de invernadero       \\ \hline
-        \texttt{Text}           & $^\circ C$     & Temperatura exterior         \\ \hline
-        \texttt{HRExt}          & \%             & Humedad relativa Exterior    \\ \hline
-        \texttt{RadExt}         & $W/m^2$        & Radiación Exterior           \\ \hline
-        \texttt{Sonda6} \\
+        \textbf{Name}           & \textbf{Units} & \textbf{Description}         \\ 
+        \hline
+        \texttt{Time Stamp}         & -              &                              \\ \hline
+        \texttt{Text}               & $^\circ C$     & Temperatura exterior         \\ \hline
+        \texttt{RadExt}             & $W/m^2$        & Radiación Exterior           \\ \hline
+        \texttt{Vviento}            & $km/s$         & Wind Velocity                \\  \hline
+        \texttt{DireccinViento}     & $^\circ$       & Dirección del Viento         \\ \hline
+        \texttt{Tinv}               & $^\circ C$     & Temperatura interior         \\ \hline
+        \texttt{RadInt}             & $W/m^2$        & Radiación Interior               \\ \hline
+        \texttt{xEstadoPant1}       & $\%$           & Estado de Pantalla de Sombreo    \\ \hline
+        \texttt{EstadoCenitalE}     & $\%$           & Porcentaje de apertura Cenital Este      \\ \hline
+        \texttt{EstadoCenitalO}     & $\%$           & Porcentaje de apertura Cenital Oeste     \\ \hline
+        \texttt{EstadoLateralE}     & $\%$           & Porcentaje de apertura Lateral Este      \\ \hline
+        \texttt{HRInt}              & $\%$           & Humedad Relativa Interior                             \\ 
         \hline
     \end{tabular}
-    \caption{Variables of Dataset \ref{}}
-    \label{table:Euskalmet}
+    \caption{Variables of dataset \ref{dataset:sysclima}}
+    \label{table:SysClimaDS}
 \end{table}
-
-
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.65]{img/fulldata.eps}
@@ -115,6 +121,7 @@ Por otro lado, como hemos mencionado anteriormente el único registro claro con 
     \centering
     \includegraphics[scale=0.55]{img/fulldata_remove_no_data.eps}
     \caption{Selection of variables}
+    \label{fig:ViewDataSetSysClimaCompact}
 \end{figure}
 \begin{figure}
     \centering

@@ -1,5 +1,5 @@
 clear all
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_01_13_sysclima/A001_UniformFormat/output/ics01.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_01_13_sysclima/A001_UniformFormat/output/ics01.mat')
 %% Normalize 
 %
 [ics_train,ics_test] = SplitTrain(ics,'percent',2);

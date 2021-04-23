@@ -1,6 +1,6 @@
 clear all
 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset01.mat')
+load("" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset01.mat')
 %%
 dataset01 = [dataset01{:}];
 %% 0 Uniform Time Stamp
@@ -31,7 +31,7 @@ end
 %%
 ics = ControlSystem(dataset03,ControlVars,Disturbances,StateVars);
 %%
-save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/cs01.mat','ics')
+save("" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/cs01.mat','ics')
 
 %%
 

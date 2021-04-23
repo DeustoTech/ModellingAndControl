@@ -28,7 +28,7 @@ for ifiles = files(3:end)'
     DataSOFCtable{iter} = TableSeries(DataSOFCtable{iter});
 end
 
-fileout = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset01.mat';
+fileout = "" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A001_UniformFormat/output/dataset01.mat';
 
 dataset01 = DataSOFCtable;
 save(fileout,'dataset01')

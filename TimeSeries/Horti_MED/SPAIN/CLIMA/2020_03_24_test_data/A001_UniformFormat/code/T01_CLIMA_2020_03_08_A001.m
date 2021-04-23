@@ -1,5 +1,5 @@
 clear 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_03_08_build_data/A001_UniformFormat/output/dataset01.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_03_08_build_data/A001_UniformFormat/output/dataset01.mat')
 %
 dataset01.VarName1 = datetime(dataset01.VarName1);
 dataset01.Properties.VariableNames{1} = 'DateTime';

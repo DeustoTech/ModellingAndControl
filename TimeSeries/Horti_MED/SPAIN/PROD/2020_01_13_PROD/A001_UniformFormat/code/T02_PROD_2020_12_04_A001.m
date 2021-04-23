@@ -1,6 +1,6 @@
 clear 
 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset01.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset01.mat')
 %% Ordenamos los datos por dias 
 [~,ind] = sort(dataset01.FechaDeEntrega);
 %
@@ -20,7 +20,7 @@ ylabel('NetoKg')
 xlabel('Date')
 grid on 
 title('Producción')
-print(fig,'/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/pics/pic01.png','-dpng')
+print(fig,"" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/pics/pic01.png','-dpng')
 
 %% Separacion por recogidas 
 %
@@ -63,9 +63,9 @@ ui{i} = uipanel('Parent',fig    , ...
 plotdat(dataset03{i},ui{i})
 end
 
-print(fig,'/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/pics/pic02.png','-dpng')
+print(fig,"" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/pics/pic02.png','-dpng')
 %%
-pathfile = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output'
+pathfile = "" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output'
 save(fullfile(pathfile,'dataset03.mat'),'dataset03');
 %%
 function plotdat(ds,Parent)

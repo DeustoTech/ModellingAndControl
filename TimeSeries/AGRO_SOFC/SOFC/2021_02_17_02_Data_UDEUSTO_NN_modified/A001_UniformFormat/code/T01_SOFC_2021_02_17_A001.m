@@ -1,6 +1,6 @@
 
 clear
-pathfolder = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2021_02_17_02_Data_UDEUSTO_NN_modified/A000_RelatedFiles/Data_UDEUSTO_NN';
+pathfolder = "" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2021_02_17_02_Data_UDEUSTO_NN_modified/A000_RelatedFiles/Data_UDEUSTO_NN';
 
 r = dir(pathfolder);
 r = r(3:end);
@@ -53,6 +53,6 @@ for ir = r'
 
 end
 
-    path =     '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2021_02_17_02_Data_UDEUSTO_NN_modified/A001_UniformFormat/output';
+    path =     "" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2021_02_17_02_Data_UDEUSTO_NN_modified/A001_UniformFormat/output';
 
 save(fullfile(path,'dataset.mat'),'dataset')

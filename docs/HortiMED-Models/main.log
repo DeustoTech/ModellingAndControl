@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.9)  23 APR 2021 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.9)  23 APR 2021 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.tex"
-(/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.tex
+**"/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.tex"
+(/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
@@ -23,7 +23,7 @@ File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/settings.tex (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/settings.tex (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -536,7 +536,11 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count300
 \l__pdf_internal_box=\box108
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.aux)
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.aux
+
+LaTeX Warning: Label `table:SysClimaDS' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -623,7 +627,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
- (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.out) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.out)
+ (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.out) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -638,7 +642,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.toc)
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -648,18 +652,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.13     \newpage
                   [1
 
-] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/contents/T01-Intro.tex
+] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T01-Intro.tex
 Chapter 1.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/contents/T02-DataDescription/T02-DataDescription.tex [2
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T02-DataDescription/T02-DataDescription.tex [2
 
 ]
 Chapter 2.
 [3
 
 ]
-
-LaTeX Warning: Reference `' on page 4 undefined on input line 102.
-
 Package epstopdf Info: Source file: <img/fulldata.eps>
 (epstopdf)                    date: 2021-02-04 15:17:34
 (epstopdf)                    size: 1275268 bytes
@@ -667,15 +668,15 @@ Package epstopdf Info: Source file: <img/fulldata.eps>
 (epstopdf)                    date: 2021-02-04 15:17:36
 (epstopdf)                    size: 358471 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/fulldata-eps-converted-to.pdf img/fulldata.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
-<img/fulldata-eps-converted-to.pdf, id=74, 697.60625pt x 609.27625pt>
+<img/fulldata-eps-converted-to.pdf, id=97, 697.60625pt x 609.27625pt>
 File: img/fulldata-eps-converted-to.pdf Graphic file (type pdf)
 <use img/fulldata-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: img/fulldata-eps-converted-to.pdf  used on input line 115.
 (pdftex.def)             Requested size: 453.43869pt x 396.02486pt.
 
-Overfull \hbox (23.43407pt too wide) in paragraph at lines 109--110
+Overfull \hbox (23.43407pt too wide) in paragraph at lines 115--116
  [][] 
  []
 
@@ -686,12 +687,12 @@ Package epstopdf Info: Source file: <img/fulldata_remove_no_data.eps>
 (epstopdf)                    date: 2021-02-04 15:50:04
 (epstopdf)                    size: 187813 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/fulldata_remove_no_data-eps-converted-to.pdf img/fulldata_remove_no_data.eps>
-(epstopdf)             \includegraphics on input line 116.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<img/fulldata_remove_no_data-eps-converted-to.pdf, id=76, 704.6325pt x 390.45876pt>
+<img/fulldata_remove_no_data-eps-converted-to.pdf, id=99, 704.6325pt x 390.45876pt>
 File: img/fulldata_remove_no_data-eps-converted-to.pdf Graphic file (type pdf)
 <use img/fulldata_remove_no_data-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata_remove_no_data-eps-converted-to.pdf  used on input line 116.
+Package pdftex.def Info: img/fulldata_remove_no_data-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 387.54909pt x 214.75298pt.
 Package epstopdf Info: Source file: <img/fulldata_remove_no_data_zoom.eps>
 (epstopdf)                    date: 2021-02-04 15:52:31
@@ -700,46 +701,88 @@ Package epstopdf Info: Source file: <img/fulldata_remove_no_data_zoom.eps>
 (epstopdf)                    date: 2021-02-04 15:52:33
 (epstopdf)                    size: 252189 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/fulldata_remove_no_data_zoom-eps-converted-to.pdf img/fulldata_remove_no_data_zoom.eps>
-(epstopdf)             \includegraphics on input line 121.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<img/fulldata_remove_no_data_zoom-eps-converted-to.pdf, id=77, 706.64pt x 390.45876pt>
+<img/fulldata_remove_no_data_zoom-eps-converted-to.pdf, id=100, 706.64pt x 390.45876pt>
 File: img/fulldata_remove_no_data_zoom-eps-converted-to.pdf Graphic file (type pdf)
 <use img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata_remove_no_data_zoom-eps-converted-to.pdf  used on input line 121.
+Package pdftex.def Info: img/fulldata_remove_no_data_zoom-eps-converted-to.pdf  used on input line 128.
 (pdftex.def)             Requested size: 388.6532pt x 214.75298pt.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/contents/A01-Parameters.tex [4] [5] [6 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/img/fulldata-eps-converted-to.pdf>] [7 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/img/fulldata_remove_no_data-eps-converted-to.pdf> </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>]
-Appendix A.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.bbl [8
-
-]) [9
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T031-ExternalVariablesPrediction.tex [4] [5] [6] [7 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata-eps-converted-to.pdf>] [8 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata_remove_no_data-eps-converted-to.pdf> </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>]
+Chapter 3.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T032-IndoorClimateModel.tex [9
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
- (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
+Chapter 4.
+[10
+
+]
+
+LaTeX Warning: Reference `traj:noheater' on page 11 undefined on input line 77.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
+LaTeX Warning: Reference `traj:heater' on page 12 undefined on input line 124.
+
+Package epstopdf Info: Source file: <img/model-2.1.1.eps>
+(epstopdf)                    date: 2021-02-09 16:30:29
+(epstopdf)                    size: 644187 bytes
+(epstopdf)             Output file: <img/model-2.1.1-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 16:30:31
+(epstopdf)                    size: 233001 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/model-2.1.1-eps-converted-to.pdf img/model-2.1.1.eps>
+(epstopdf)             \includegraphics on input line 130.
+Package epstopdf Info: Output file is already uptodate.
+<img/model-2.1.1-eps-converted-to.pdf, id=181, 833.1125pt x 416.55624pt>
+File: img/model-2.1.1-eps-converted-to.pdf Graphic file (type pdf)
+<use img/model-2.1.1-eps-converted-to.pdf>
+Package pdftex.def Info: img/model-2.1.1-eps-converted-to.pdf  used on input line 130.
+(pdftex.def)             Requested size: 416.55524pt x 208.2776pt.
+
+Package amsmath Warning: Foreign command \atop;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 147.
+
+[12 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/model-2.1.1-eps-converted-to.pdf>] [13]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/A01-Parameters.tex [14]
+Appendix A.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.bbl [15
+
+]) [16
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+ (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1BED9CB30B5EBE41FE716D31E09323E3;354.
+(rerunfilecheck)             Checksum: 3E3DD8D4C239A1F6842E32D66F627684;617.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 17169 strings out of 480608
- 326141 string characters out of 5903630
- 591129 words of memory out of 5000000
- 32629 multiletter control sequences out of 15000+600000
+ 17291 strings out of 480608
+ 329391 string characters out of 5903630
+ 593316 words of memory out of 5000000
+ 32696 multiletter control sequences out of 15000+600000
  550305 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,77p,1077b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/slides/TomatoGrowthModel-slides/latex/main.pdf" (10 pages, 956404 bytes).
+ 62i,22n,77p,1080b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.pdf" (17 pages, 1282019 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

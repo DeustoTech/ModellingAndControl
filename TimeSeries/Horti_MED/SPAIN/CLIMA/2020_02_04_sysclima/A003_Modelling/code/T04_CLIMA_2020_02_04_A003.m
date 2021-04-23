@@ -1,8 +1,8 @@
 %% NARX
 
 clear
-%load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_without_heater.mat')
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_with_heater.mat')
+%load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_without_heater.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_with_heater.mat')
 %
 rng(0)
 %%

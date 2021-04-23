@@ -1,8 +1,8 @@
 %
 clear all
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2021_04_21_euskalmet/A000_RelatedFiles/takeclimadata/fulldata.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_21_euskalmet/A000_RelatedFiles/takeclimadata/fulldata.mat')
 %
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat')
 
 %%
 newds.Properties.VariableNames{7} = 'Text';
@@ -28,7 +28,7 @@ ShowData(iTs)
 
 %%
 %
-path_file =  '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat';
+path_file =  "" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat';
 load(path_file)
 
 %%

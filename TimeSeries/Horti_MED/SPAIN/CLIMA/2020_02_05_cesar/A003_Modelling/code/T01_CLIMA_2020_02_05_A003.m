@@ -1,5 +1,5 @@
 clear 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_05_cesar/A001_UniformFormat/output/idd1.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_05_cesar/A001_UniformFormat/output/idd1.mat')
 %
 %
 idd_train = getexp(idd1,1);
@@ -88,7 +88,7 @@ Prediction = struct2table(Prediction);
 %%
 save('NARX.mat','Real','Prediction')
 %%
-%file = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A003_Modelling/output/MODEL01_SOFC.mat';
+%file = "" + MainPath + 'TimeSeries/AGRO_SOFC/SOFC/2020_12_04_Single_Cell/A003_Modelling/output/MODEL01_SOFC.mat';
 %genFunction(net,file)
 
 

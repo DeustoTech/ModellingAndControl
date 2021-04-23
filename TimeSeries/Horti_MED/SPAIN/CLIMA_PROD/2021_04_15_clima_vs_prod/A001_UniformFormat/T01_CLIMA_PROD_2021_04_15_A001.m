@@ -1,9 +1,9 @@
 clear all
 %
-path_file =  '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat';
+path_file =  "" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat';
 load(path_file)
 %
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset03.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset03.mat')
 %%
 clima_ts = iTs_list;
 for i = 1:6

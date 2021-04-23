@@ -1,6 +1,6 @@
 clear
 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_05_cesar/A000_RelatedFiles/ttFeb2019.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_05_cesar/A000_RelatedFiles/ttFeb2019.mat')
 
 dataset01 = timetable2table(ttFeb2019);
 name_vars = dataset01.Properties.VariableNames;
@@ -46,7 +46,7 @@ StateVars = {'Tinv'};
 idd1 = Build_Iddata(dataset03,ControlVars,StateVars);
 
 ds = dataset03;
-save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_05_cesar/A001_UniformFormat/output/idd1.mat','idd1','ds','MN','ST')
+save("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_05_cesar/A001_UniformFormat/output/idd1.mat','idd1','ds','MN','ST')
 
 %%
 fig = figure('unit','norm','pos',[0 0 0.4 0.5]);

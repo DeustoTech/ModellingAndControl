@@ -1,5 +1,5 @@
 clear
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A001_UniformFormat/output/dataset03.mat')
+load("" + MainPath + 'TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A001_UniformFormat/output/dataset03.mat')
 
 %%
 state_vars = {'CO_mole_out','H2_mole_out'};
@@ -50,9 +50,9 @@ path = "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub
 print(fig,fullfile(path,'Test03.eps'),'-depsc')
 
 %%
-save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A003_Modelling/output/MODEL02_norm_data.mat')
+save("" + MainPath + 'TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A003_Modelling/output/MODEL02_norm_data.mat')
 %%
-file = '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A003_Modelling/output/MODEL01_REFORMER.mat';
+file = "" + MainPath + 'TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A003_Modelling/output/MODEL01_REFORMER.mat';
 genFunction(net,file)
 
 %% isosurface 

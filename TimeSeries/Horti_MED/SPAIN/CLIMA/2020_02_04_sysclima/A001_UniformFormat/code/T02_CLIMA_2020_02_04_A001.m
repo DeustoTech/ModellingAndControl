@@ -1,10 +1,10 @@
 clear 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/dataset01.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/dataset01.mat')
 %
 dataset01.VarName1 = datetime(dataset01.VarName1);
 dataset01.Properties.VariableNames{1} = 'DateTime';
 
-save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/dataset02.mat','dataset01')
+save("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/dataset02.mat','dataset01')
 %%
 dataset01 = dataset01(:,{'DateTime','Tinv','RadInt','HRInt','Text','RadExt','HRExt','Vviento','DireccinViento','AlarmaVto','AlarmaLluvia','EstadoCenitalO','EstadoCenitalE','EstadoPant1'});
 dataset01.Time = dataset01.DateTime - dataset01.DateTime(1);
@@ -23,7 +23,7 @@ dataset_train = dataset(1:nend,:);
 dataset_test  = dataset(1+nend:end,:);
 
 %
-path =     '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output';
+path =     "" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output';
 
 
 ControlVars = {'RadExt','Vviento','EstadoCenitalE','EstadoCenitalO','Text','HRExt','EstadoPant1'};
@@ -45,7 +45,7 @@ dataset_train = dataset(1:nend,:);
 dataset_test  = dataset(1+nend:end,:);
 
 %
-path =     '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output';
+path =     "" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output';
 
 %%
 ControlVars = {'RadExt','Vviento','EstadoCenitalE','Text'};

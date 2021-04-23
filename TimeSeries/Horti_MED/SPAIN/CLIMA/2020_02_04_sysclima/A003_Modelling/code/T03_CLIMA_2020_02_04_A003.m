@@ -2,9 +2,9 @@
 % Consideramos que hay heater
 
 clear
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A003_Modelling/output/coeff.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A003_Modelling/output/coeff.mat')
 
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_with_heater.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_with_heater.mat')
 %%
 tspan = minutes(dataset.Time);
 Date = dataset.DateTime;

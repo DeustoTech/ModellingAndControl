@@ -1,7 +1,7 @@
 %%
 
 clear
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_without_heater.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A001_UniformFormat/output/traj_1.3.2_without_heater.mat')
 %%
 tspan = minutes(dataset.Time);
 Date = dataset.DateTime;
@@ -33,7 +33,7 @@ coeffs = pinv(A)*dx_T_dt_span;
 cd = coeffs(1);
 cR = 1/coeffs(2);
 
-path =  '/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_02_04_sysclima/A003_Modelling/output'
+path =  "" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_02_04_sysclima/A003_Modelling/output'
 save(fullfile(path,'coeff.mat'),'cd','cR')
 %%
 f_T = @(t) interp1(tspan,f_T_m_span,t);

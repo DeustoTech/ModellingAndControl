@@ -33,4 +33,4 @@ reformerdata10000samplesVer01 = readtable("/Users/djoroya/Dropbox/My Mac (Deyvis
 clear opts
 
 dataset01 = reformerdata10000samplesVer01;
-save('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A001_UniformFormat/output/dataset01.mat','dataset01')
+save("" + MainPath + 'TimeSeries/AGRO_SOFC/REFORMER/2020_11_30_Sim_Reformer/A001_UniformFormat/output/dataset01.mat','dataset01')

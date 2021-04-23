@@ -1,6 +1,6 @@
 %%
 clear;
-load('/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/backend/TimeSeries/Horti_MED/CLIMA/2020_01_13_sysclima/A001_UniformFormat/output/dataset02.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2020_01_13_sysclima/A001_UniformFormat/output/dataset02.mat')
 %%
 vars = {'Text','RadExt','Tinv'}
 ind = 136:5000;
