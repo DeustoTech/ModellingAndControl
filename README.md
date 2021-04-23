@@ -1,3 +1,8 @@
-# Modelling & Control
 
-Este repositorio recopilará toda la metodología para procesar datos de sistemas dinámicos de manera que se pueda reutilizar metodologías para distintos casos, creando indicadores globales y sistematizar procedimientos. Este seá como un servidor donde pueda procesar datos de sistemas dinámico. 
+
+- Creamos una lista de celda de Tablas de MATLAB 
+- Creamos una lista de objetos TimeTables
+- ShowData
+- RemoveRowsNan
+- UniformTimeStamp
+- Elegimos Inputs Disturbances & Outputs 
