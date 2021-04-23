@@ -1,0 +1,57 @@
+
+
+    \section{Dinamical Models}
+
+    \begin{model}{HortSys}{}\label{model:HortSys}
+        Modelo dinámico. Denotaremos con el superíndice $t$ para determinar la iteración de tiempo del estado $x^t$. Cada iteración representa un día.
+        \begin{gather}
+            \begin{cases}
+                x_{pt}^{t+1}  \hspace{0.25em}   = x_{pt}^{t}    \hspace{0.8em}  + \Delta x_{pt}    \\
+                x_{dmp}^{t+1}    = x_{dmp}^{t}   + \Delta x_{dmp}    \\
+            \end{cases}
+        \end{gather}      
+        A continuación describiremos $\Delta x_{pt}$, $\Delta x_{dmp}$.
+        \begin{gather}
+            \begin{cases}
+                \Delta x_{pt}  &  = u_R \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot \mu[\mathcal{G}_{T}(u_T)] \\
+                \Delta x_{dmp} &  =  u_R  \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot p_{rue}
+            \end{cases}
+        \end{gather}      
+        Donde $\mu[\mathcal{G}_{T}(u_T)]$ la media en todo el día de la función de inhibición de crecimiento por temperatura.
+    \end{model}
+
+    
+    \begin{model}{HortSys LAI and - Continuous Time Formulation}
+     Modelo dinámico
+    \begin{gather}
+        \begin{cases}
+            \dot{x}_{nt}  &= \mathcal{G}_{TT}(u_T(t)) - \mathcal{G}_{TT}(u_T(t-1))  \\
+            \dot{x}_{pt}  &  = u_R \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot x_{nt} \\
+            \dot{x}_{dmp} &  =  u_R  \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot p_{rue}
+        \end{cases}
+        \text{Initial.Cond.}
+        \begin{cases}
+            x_{nt} \ \ (0)  & = \mu(\mathcal{G}_T(u_T(1)))  \\
+            x_{pt} \ \ (0)  &  = x_{pt}^0 \\
+            x_{dmp}(0) &  =  0
+        \end{cases}
+    \end{gather}        
+    \end{model}
+
+    \begin{model}{Simplify TOMGRO}
+        Modelo dinámico
+       \begin{gather}
+           \begin{cases}
+               \dot{x}_{nt}  &= \mathcal{G}_{TT}(u_T(t)) - \mathcal{G}_{TT}(u_T(t-1))  \\
+               \dot{x}_{pt}  &  = u_R \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot x_{nt} \\
+               \dot{x}_{dmp} &  =  u_R  \cdot \mathcal{F}_{fpar}(x_{pt}) \cdot p_{rue}
+           \end{cases}
+           \text{Initial.Cond.}
+           \begin{cases}
+               x_{nt} \ \ (0)  & = \mu(\mathcal{G}_T(u_T(1)))  \\
+               x_{pt} \ \ (0)  &  = x_{pt}^0 \\
+               x_{dmp}(0) &  =  0
+           \end{cases}
+       \end{gather}        
+       \end{model}
+   
