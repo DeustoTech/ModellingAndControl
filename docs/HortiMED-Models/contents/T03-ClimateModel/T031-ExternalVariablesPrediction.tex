@@ -1,2 +1,69 @@
 
     \chapter{External Climate Variables prediction}
+
+
+Para una prediición adecuada de lasvariables internas del invernaderos, deberemos conocer las vairables externas qie afectan a la dinámica climática. En concreto nos referimos a las variables de temperatura, radiación y humedad exterior. Las dos primar son recogidas por el sistema \emph{sysclima}, mientras que la humedad relativa exterior no es conocida. 
+
+\section{Datos disponibles en API libres}
+
+Es conocido los servicios de predicción meteorológicas es estas variables, sin embargo es necesario comprobar la frecuencia máxima, además
+
+\begin{enumerate}
+    \item \textbf{Open Data Euskadi} Predicción meteorológica actual y datos acumulados de 2021:\url{https://opendata.euskadi.eus/catalogo/-/prediccion-meteorologica-de-2021/}. Temperatura máxima y temperatura mínima por día, además de una descripción en texto de como será el día. Además solo se centra en ciudade grande. La medida más cercana a meñaka, es la medida a la que relacciona a la zona de Bilbao.
+        
+    \item \textbf{AEMET} \url{https://opendata.aemet.es/centrodedescargas/inicio} (contacto 902 887 060)
+
+    \item OpenWeather
+\end{enumerate}
+\section{Predicción local mediante los datos de \emph{Sysclima}}
+    
+
+Consideraremos un time series supongamos que tenemos $M$ trayectorias que denotaremos como $\{\mathcal{T}_m\}_{m=1}^M$. Además donde cada $\mathcal{T}_m$ esta compuesta de la siguiente manera $\mathcal{T}_m = \{\bm{y}^m_t\}_{t=0}^{N_T^m}$. A su vez cada trayectoria esta compuesta por vectores $\bm{y}_t^m \in \mathbb{R}^{N_y}$. 
+
+
+Entonces nos gustaría encontrar una función que sea capaz de tomando una trayectoria de longitud pequeña $\mathcal{T}_0$, generar una trayectorias en el futuro $\mathcal{T}_f$. 
+
+\begin{gather}
+    \mathcal{T}_f = \mathcal{F}(\mathcal{T}_0) 
+\end{gather}
+
+¿Cómo encontramos la función $\mathcal{F}$?
+
+
+Podemos presuponer que la señal proviene de un sistema dinámico de manera que la sequencia de puntos $\mathcal{T}$ es una trayectoria continua $\mathcal{T} = \{\bm{y}(t) \in \mathbb{R}^{N_y}  |  \forall t \in [0,T]\}$, y que sigue la sigueinte ecuación diferencial 
+
+\begin{enumerate}
+    \item Without memory
+     \begin{gather}
+        \begin{cases}
+            \dot{\bm{y}}_m(t) = \mathcal{F}_\omega(\bm{y}_m(t)) \\
+            \bm{y}_m(0) = y_0^m 
+        \end{cases}
+    \end{gather}
+
+    \item With meomory
+     \begin{gather}
+        \begin{cases}
+            \dot{\bm{y}}_m(t) = \mathcal{F}_\omega(\bm{y}_m(t),\bm{h}_m(t)) \\
+            \dot{\bm{h}}_m(t) = \mathcal{G}_\gamma(\bm{y}_m(t),\bm{h}_m(t)) 
+        \end{cases}
+        \text{I.C.}
+        \begin{cases}
+            \bm{y}_m(0) = y_0^m \\
+            \bm{h}_m(0) = 0
+        \end{cases}    
+    \end{gather}
+\end{enumerate}
+
+
+En ambos casos trateremos de resolver el problemas minimización
+
+\begin{gather}
+    \min_{\Omega} \sum_{m=1}^{M} \sum_{t=1}^{N_t^m}\Big(  y_m(t) - y_t\Big)^2
+\end{gather}
+
+Donde $\Omega$ en el caso con memoria es $\Omega = \{\omega,\gamma\}$, mientras que en el caso sin memoria $\Omega = \omega$
+
+
+\section{Radiación Externa}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.9)  23 APR 2021 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.9)  20 MAY 2021 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,6 +252,9 @@ Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 17.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 19.
 
 \c@definition=\count270
 \c@dataset=\count271
@@ -532,13 +535,35 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 \pgffor@skip=\dimen264
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
-))) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count300
+\lst@gtempboxa=\box108
+\lst@token=\toks42
+\lst@length=\count301
+\lst@currlwidth=\dimen265
+\lst@column=\count302
+\lst@pos=\count303
+\lst@lostspace=\dimen266
+\lst@width=\dimen267
+\lst@newlines=\count304
+\lst@lineno=\count305
+\lst@maxwidth=\dimen268
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count306
+\lst@skipnumbers=\count307
+\lst@framebox=\box109
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count300
-\l__pdf_internal_box=\box108
+\l__kernel_color_stack_int=\count308
+\l__pdf_internal_box=\box110
 ) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.aux
 
-LaTeX Warning: Label `table:SysClimaDS' multiply defined.
+LaTeX Warning: Label `th:M' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -596,24 +621,24 @@ LaTeX Font Info:    ... okay on input line 9.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count301
-\scratchdimen=\dimen265
-\scratchbox=\box109
-\nofMPsegments=\count302
-\nofMParguments=\count303
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count304
-\MPscratchDim=\dimen266
-\MPnumerator=\count305
-\makeMPintoPDFobject=\count306
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count309
+\scratchdimen=\dimen269
+\scratchbox=\box111
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen270
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box110
+\AtBeginShipoutBox=\box112
 Package hyperref Info: Link coloring ON on input line 9.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -622,7 +647,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count307
+\c@section@level=\count315
 )
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
@@ -632,6 +657,7 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout6 = `main.out'.
 
  ABD: EveryShipout initializing macros
+\c@lstlisting=\count316
 LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -642,91 +668,102 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.toc)
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...ine {7}Data Pre-procesing }{24}{chapter.7}
+                                                  % [1
+
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13     \newpage
-                  [1
-
-] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T01-Intro.tex
+ [2] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T01-Intro.tex
 Chapter 1.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T02-DataDescription/T02-DataDescription.tex [2
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T02-DataDescription/T02-DataDescription.tex [3
 
 ]
 Chapter 2.
-[3
-
-]
-Package epstopdf Info: Source file: <img/fulldata.eps>
-(epstopdf)                    date: 2021-02-04 15:17:34
-(epstopdf)                    size: 1275268 bytes
-(epstopdf)             Output file: <img/fulldata-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-04 15:17:36
-(epstopdf)                    size: 358471 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/fulldata-eps-converted-to.pdf img/fulldata.eps>
-(epstopdf)             \includegraphics on input line 115.
+(/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/tables/table_sysclimads.tex)
+Package epstopdf Info: Source file: <img/SysClimaDataSet.eps>
+(epstopdf)                    date: 2021-04-25 16:49:32
+(epstopdf)                    size: 4275706 bytes
+(epstopdf)             Output file: <img/SysClimaDataSet-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-25 16:49:36
+(epstopdf)                    size: 2872810 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SysClimaDataSet-eps-converted-to.pdf img/SysClimaDataSet.eps>
+(epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
-<img/fulldata-eps-converted-to.pdf, id=97, 697.60625pt x 609.27625pt>
-File: img/fulldata-eps-converted-to.pdf Graphic file (type pdf)
-<use img/fulldata-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata-eps-converted-to.pdf  used on input line 115.
-(pdftex.def)             Requested size: 453.43869pt x 396.02486pt.
+<img/SysClimaDataSet-eps-converted-to.pdf, id=237, 645.41125pt x 594.22pt>
+File: img/SysClimaDataSet-eps-converted-to.pdf Graphic file (type pdf)
+<use img/SysClimaDataSet-eps-converted-to.pdf>
+Package pdftex.def Info: img/SysClimaDataSet-eps-converted-to.pdf  used on input line 20.
+(pdftex.def)             Requested size: 419.51234pt x 386.23842pt.
+ [4
 
-Overfull \hbox (23.43407pt too wide) in paragraph at lines 115--116
- [][] 
+] [5]
+Package epstopdf Info: Source file: <img/ProdMenaka.eps>
+(epstopdf)                    date: 2021-04-25 16:19:27
+(epstopdf)                    size: 42111 bytes
+(epstopdf)             Output file: <img/ProdMenaka-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-25 16:46:03
+(epstopdf)                    size: 26740 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/ProdMenaka-eps-converted-to.pdf img/ProdMenaka.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+<img/ProdMenaka-eps-converted-to.pdf, id=257, 569.12625pt x 441.65pt>
+File: img/ProdMenaka-eps-converted-to.pdf Graphic file (type pdf)
+<use img/ProdMenaka-eps-converted-to.pdf>
+Package pdftex.def Info: img/ProdMenaka-eps-converted-to.pdf  used on input line 39.
+(pdftex.def)             Requested size: 227.64647pt x 176.65686pt.
+ [6 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/SysClimaDataSet-eps-converted-to.pdf>] (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/tables/table_sysclimads_compact.tex)
+Package epstopdf Info: Source file: <img/SysClimaDataSet02.eps>
+(epstopdf)                    date: 2021-04-25 16:50:13
+(epstopdf)                    size: 2586905 bytes
+(epstopdf)             Output file: <img/SysClimaDataSet02-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-25 16:50:16
+(epstopdf)                    size: 1747923 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/SysClimaDataSet02-eps-converted-to.pdf img/SysClimaDataSet02.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+<img/SysClimaDataSet02-eps-converted-to.pdf, id=275, 644.4075pt x 392.46625pt>
+File: img/SysClimaDataSet02-eps-converted-to.pdf Graphic file (type pdf)
+<use img/SysClimaDataSet02-eps-converted-to.pdf>
+Package pdftex.def Info: img/SysClimaDataSet02-eps-converted-to.pdf  used on input line 55.
+(pdftex.def)             Requested size: 354.42522pt x 215.85709pt.
+ [7 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/ProdMenaka-eps-converted-to.pdf>] [8 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/SysClimaDataSet02-eps-converted-to.pdf>]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T031-ExternalVariablesPrediction.tex [9]
+Chapter 3.
+
+Overfull \hbox (1.81664pt too wide) in paragraph at lines 12--13
+\OT1/cmtt/m/n/10 opendata . euskadi . eus / catalogo / -[] / prediccion-[]meteorologica-[]de-[]2021/$[][]\OT1/cmr/m/n/10 . Tem-per-atura
  []
 
-Package epstopdf Info: Source file: <img/fulldata_remove_no_data.eps>
-(epstopdf)                    date: 2021-02-04 15:47:34
-(epstopdf)                    size: 604009 bytes
-(epstopdf)             Output file: <img/fulldata_remove_no_data-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-04 15:50:04
-(epstopdf)                    size: 187813 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/fulldata_remove_no_data-eps-converted-to.pdf img/fulldata_remove_no_data.eps>
-(epstopdf)             \includegraphics on input line 122.
-Package epstopdf Info: Output file is already uptodate.
-<img/fulldata_remove_no_data-eps-converted-to.pdf, id=99, 704.6325pt x 390.45876pt>
-File: img/fulldata_remove_no_data-eps-converted-to.pdf Graphic file (type pdf)
-<use img/fulldata_remove_no_data-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata_remove_no_data-eps-converted-to.pdf  used on input line 122.
-(pdftex.def)             Requested size: 387.54909pt x 214.75298pt.
-Package epstopdf Info: Source file: <img/fulldata_remove_no_data_zoom.eps>
-(epstopdf)                    date: 2021-02-04 15:52:31
-(epstopdf)                    size: 1014006 bytes
-(epstopdf)             Output file: <img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-04 15:52:33
-(epstopdf)                    size: 252189 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/fulldata_remove_no_data_zoom-eps-converted-to.pdf img/fulldata_remove_no_data_zoom.eps>
-(epstopdf)             \includegraphics on input line 128.
-Package epstopdf Info: Output file is already uptodate.
-<img/fulldata_remove_no_data_zoom-eps-converted-to.pdf, id=100, 706.64pt x 390.45876pt>
-File: img/fulldata_remove_no_data_zoom-eps-converted-to.pdf Graphic file (type pdf)
-<use img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>
-Package pdftex.def Info: img/fulldata_remove_no_data_zoom-eps-converted-to.pdf  used on input line 128.
-(pdftex.def)             Requested size: 388.6532pt x 214.75298pt.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T031-ExternalVariablesPrediction.tex [4] [5] [6] [7 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata-eps-converted-to.pdf>] [8 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata_remove_no_data-eps-converted-to.pdf> </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/fulldata_remove_no_data_zoom-eps-converted-to.pdf>]
-Chapter 3.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T032-IndoorClimateModel.tex [9
 
-]
-Chapter 4.
+Overfull \hbox (1.04753pt too wide) in paragraph at lines 14--15
+[]\OT1/cmr/bx/n/10 AEMET [][]$\OT1/cmtt/m/n/10 https : / / opendata . aemet . es / centrodedescargas / inicio$[][] \OT1/cmr/m/n/10 (con-tacto 902 887 060) 
+ []
+
 [10
 
+]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T032-CloseLoopFunctions.tex [11]
+Chapter 4.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T03-ClimateModel/T033-IndoorClimateModel.tex [12
+
+]
+Chapter 5.
+[13
+
 ]
 
-LaTeX Warning: Reference `traj:noheater' on page 11 undefined on input line 77.
+LaTeX Warning: Reference `traj:noheater' on page 14 undefined on input line 69.
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 
-LaTeX Warning: Reference `traj:heater' on page 12 undefined on input line 124.
+LaTeX Warning: Reference `traj:heater' on page 15 undefined on input line 116.
 
 Package epstopdf Info: Source file: <img/model-2.1.1.eps>
 (epstopdf)                    date: 2021-02-09 16:30:29
@@ -735,32 +772,97 @@ Package epstopdf Info: Source file: <img/model-2.1.1.eps>
 (epstopdf)                    date: 2021-02-09 16:30:31
 (epstopdf)                    size: 233001 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/model-2.1.1-eps-converted-to.pdf img/model-2.1.1.eps>
-(epstopdf)             \includegraphics on input line 130.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<img/model-2.1.1-eps-converted-to.pdf, id=181, 833.1125pt x 416.55624pt>
+<img/model-2.1.1-eps-converted-to.pdf, id=378, 833.1125pt x 416.55624pt>
 File: img/model-2.1.1-eps-converted-to.pdf Graphic file (type pdf)
 <use img/model-2.1.1-eps-converted-to.pdf>
-Package pdftex.def Info: img/model-2.1.1-eps-converted-to.pdf  used on input line 130.
+Package pdftex.def Info: img/model-2.1.1-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 416.55524pt x 208.2776pt.
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 147.
+(amsmath)                 on input line 139.
 
-[12 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/model-2.1.1-eps-converted-to.pdf>] [13]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/A01-Parameters.tex [14]
-Appendix A.
-) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.bbl [15
+[15 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/model-2.1.1-eps-converted-to.pdf>] [16]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T04-CropModel/T040-CropModelVars.tex [17]
+Chapter 6.
+[18
 
-]) [16
+]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T04-CropModel/T041-Proccess.tex [19]
+Package epstopdf Info: Source file: <img/gla.eps>
+(epstopdf)                    date: 2021-04-20 14:02:53
+(epstopdf)                    size: 255792 bytes
+(epstopdf)             Output file: <img/gla-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-20 14:02:55
+(epstopdf)                    size: 94940 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/gla-eps-converted-to.pdf img/gla.eps>
+(epstopdf)             \includegraphics on input line 34.
+Package epstopdf Info: Output file is already uptodate.
+<img/gla-eps-converted-to.pdf, id=445, 502.87875pt x 357.335pt>
+File: img/gla-eps-converted-to.pdf Graphic file (type pdf)
+<use img/gla-eps-converted-to.pdf>
+Package pdftex.def Info: img/gla-eps-converted-to.pdf  used on input line 34.
+(pdftex.def)             Requested size: 251.43875pt x 178.66705pt.
+ [20 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/gla-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/F_x_pt.eps>
+(epstopdf)                    date: 2021-04-20 14:02:51
+(epstopdf)                    size: 253643 bytes
+(epstopdf)             Output file: <img/F_x_pt-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-20 14:02:53
+(epstopdf)                    size: 95588 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/F_x_pt-eps-converted-to.pdf img/F_x_pt.eps>
+(epstopdf)             \includegraphics on input line 71.
+Package epstopdf Info: Output file is already uptodate.
+<img/F_x_pt-eps-converted-to.pdf, id=460, 515.9275pt x 357.335pt>
+File: img/F_x_pt-eps-converted-to.pdf Graphic file (type pdf)
+<use img/F_x_pt-eps-converted-to.pdf>
+Package pdftex.def Info: img/F_x_pt-eps-converted-to.pdf  used on input line 71.
+(pdftex.def)             Requested size: 257.96312pt x 178.66705pt.
+ [21 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/F_x_pt-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <img/uT_sm.eps>
+(epstopdf)                    date: 2021-04-20 11:41:16
+(epstopdf)                    size: 76930 bytes
+(epstopdf)             Output file: <img/uT_sm-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-20 11:41:18
+(epstopdf)                    size: 35974 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/uT_sm-eps-converted-to.pdf img/uT_sm.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+<img/uT_sm-eps-converted-to.pdf, id=475, 483.8075pt x 354.32375pt>
+File: img/uT_sm-eps-converted-to.pdf Graphic file (type pdf)
+<use img/uT_sm-eps-converted-to.pdf>
+Package pdftex.def Info: img/uT_sm-eps-converted-to.pdf  used on input line 108.
+(pdftex.def)             Requested size: 241.90315pt x 177.16144pt.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T04-CropModel/T042-CropModelsEq.tex [22 </Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/img/uT_sm-eps-converted-to.pdf>]) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T05-PreProcessing/T05-Prepro.tex [23]
+Chapter 7.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T06-ClimateModelValidation/T06-ModelClimateValidation.tex [24
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+Chapter 8.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T07-CropModelValidation/T07-ModelCropValidation.tex [25
+
+]
+Chapter 9.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/T08-Conclusion.tex [26
+
+]
+Chapter 10.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/contents/A01-Parameters.tex [27
+
+]
+Appendix A.
+) (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.bbl [28
+
+]) [29
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3E3DD8D4C239A1F6842E32D66F627684;617.
+(rerunfilecheck)             Checksum: 8093C3AA0F8F98D54CA5F8EA8136AB6B;2883.
 
 
 LaTeX Warning: There were undefined references.
@@ -768,21 +870,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 17291 strings out of 480608
- 329391 string characters out of 5903630
- 593316 words of memory out of 5000000
- 32696 multiletter control sequences out of 15000+600000
- 550305 words of font info for 89 fonts, out of 8000000 for 9000
+ 18854 strings out of 480608
+ 355493 string characters out of 5903630
+ 614707 words of memory out of 5000000
+ 34095 multiletter control sequences out of 15000+600000
+ 550999 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,22n,77p,1080b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.pdf" (17 pages, 1282019 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "/Users/djoroya/Dropbox/My Mac (Deyviss’s MacBook Pro)/Documents/GitHub/ModellingAndControl/docs/HortiMED-Models/main.pdf" (30 pages, 5416047 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 645 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 368 words of extra memory for PDF output out of 10000 (max. 10000000)
 

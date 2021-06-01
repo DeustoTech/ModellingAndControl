@@ -9,8 +9,6 @@ classdef NormalizationCS
     
     methods
         function obj = NormalizationCS(mean,std)
-            %NORMALIZATIONCS Construct an instance of this class
-            %   Detailed explanation goes here
             obj.mean = mean;
             obj.std = std;
         end

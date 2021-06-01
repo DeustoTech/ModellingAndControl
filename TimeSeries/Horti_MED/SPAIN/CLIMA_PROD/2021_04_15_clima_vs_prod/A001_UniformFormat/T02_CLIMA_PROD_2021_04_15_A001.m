@@ -1,6 +1,6 @@
 clear 
 
-load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_21_euskalmet/A000_RelatedFiles/takeclimadata/fulldata.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/olds/2021_04_21_euskalmet/A000_RelatedFiles/takeclimadata/fulldata.mat')
 
 %%
 ds.DateTime = newds.DateTime;
@@ -23,7 +23,7 @@ ShowData(iTs);
 
 %%
 %%
-load("" + MainPath + 'TimeSeries/Horti_MED/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset03.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/PROD/2020_01_13_PROD/A001_UniformFormat/output/dataset03.mat')
 nseasons= length(dataset03);
 for i = 1:nseasons
 produ_ts(i) = TableSeries((dataset03{i}));
