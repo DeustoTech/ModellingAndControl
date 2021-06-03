@@ -23,8 +23,8 @@ dlims = [datetime('2018-07-29 06:00:00') datetime('2018-07-29 22:00:00')];
 
 %dlims = [datetime('2017-07-16 11:00:00') datetime('2017-07-17 12:00:00')];
 
-dlims = [datetime('2018-02-25 11:00:00') datetime('2018-03-01 18:00:00')];
-dlims = dlims + days(140)
+dlims = [datetime('2018-02-25 11:00:00') datetime('2018-05-06 18:00:00')];
+dlims = dlims + days(365)
 %
 clf
 ui = uipanel('Parent',gcf,'Unit','norm','pos',[-0.12 -0.1 1.2 1.15]);

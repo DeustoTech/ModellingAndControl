@@ -12,7 +12,7 @@ iTs = MediaMovil(iTs,2);
 iTs = UniformTimeStamp(iTs,'DT',minutes(10));
 %
 iTs = iTs(4);
-iTs = subselect(iTs,1:300  );
+iTs = subselect(iTs,1:800  );
 %iTs = iTs(1);
 %iTs = subselect(iTs,1:800 );
 

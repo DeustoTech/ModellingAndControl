@@ -1,6 +1,6 @@
 
 clear all
-load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat')
+load("" + MainPath + 'TimeSeries/Horti_MED/SPAIN/CLIMA/olds/2021_04_13_sysclima_full/A001_UniformFormat/output/dataset02.mat')
 %%
 newTs = Concat(iTs_list);
 
