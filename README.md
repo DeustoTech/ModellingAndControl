@@ -8,3 +8,11 @@ Esta librería tiene como objetivo la creación de modelos basado en datos .
 - RemoveRowsNan
 - UniformTimeStamp
 - Elegimos Inputs Disturbances & Outputs 
+
+
+# Download
+
+```
+path_folder = '';
+unzip('https://github.com/djoroya/ModellingAndControl/archive/refs/heads/master.zip',path_folder)
+```
