@@ -16,8 +16,6 @@ function [Inputs,Outputs,tspan,DateTime] = GenData(iNN,ics,varargin)
        ind =  1:length(ics.TableSeries);
     end
 
-    
-
     %%
     newInputs = arrayfun(@(i)ics.Inputs{i}(:,1:end-1), ...
                          ind,'UniformOutput',0);
