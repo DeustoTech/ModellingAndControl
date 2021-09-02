@@ -44,7 +44,7 @@ catch
     elseif isunix
         untar('https://github.com/casadi/casadi/releases/download/3.5.1/casadi-linux-matlabR2014b-v3.5.1.tar.gz',casADi_folder)
     end
-    addpath(genpath(pathfile))
+    addpath(genpath(main_path))
 
 end
 %% add all files 
